@@ -1,5 +1,5 @@
 const CONFIG = {
-  BASE_URL: "http://18.141.24.222:7000/",
+  BASE_URL: "https://pilahin-api.onrender.com/",
 };
 
 export default CONFIG;
