@@ -1,0 +1,69 @@
+/* Halaman Pilah */
+.scan-page {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.scan-title {
+  color: #004d40; /* hijau tua */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.scan-image-container {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.scan-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.scan-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.scan-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #a5d6a7; /* hijau muda */
+  color: #004d40; /* hijau tua */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scan-btn:hover {
+  background-color: #81c784; /* hijau muda lebih gelap */
+}
+
+.scan-preview-container {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  background-color: #e0f2f1; /* hijau sangat muda */
+  border: 2px dashed #004d40; /* hijau tua */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.pilah-btn {
+  background-color: #a5d6a7;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.scan-result-text {
+  color: #004d40;
+  font-size: 1.1rem;
+}

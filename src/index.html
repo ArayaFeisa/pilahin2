@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+    <title>Pilahin</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="main-header container">
+          <a class="brand-logo" href="#/">
+            <img src="/images/Pilahin.png" alt="Logo Pilahin" class="logo-image" />
+          </a>
+
+          <nav id="navigation-drawer" class="navigation-drawer">
+            <ul id="nav-list" class="nav-list">
+              <li><a href="#/">Home</a></li>
+              <li><a href="#/scan">Pilah</a></li>
+              <li><a href="#/education">Education</a></li>
+              <li><a href="#/recycle">Recycle</a></li>
+            </ul>
+            <ul class="nav-auth">
+              <li class="nav-user-dropdown" id="nav-user-dropdown" style="position: relative;">
+                <a href="#/auth" class="auth-link" id="auth-link">Login / Register</a>
+                <ul class="dropdown-menu" id="user-dropdown-menu" style="display: none; position: absolute; top: 100%; right: 0; background: white; border: 1px solid #ccc; list-style: none; padding: 5px 0; z-index: 1000;">
+                  <li><a href="#/change-password" id="change-password-link">Change Password</a></li>
+                  <li><a href="#" id="logout-link">Logout</a></li>
+                  <li><a href="#" id="delete-account-link">Delete Account</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </nav>
+
+          <button id="drawer-button" class="drawer-button">☰</button>
+        </div>
+      </header>
+
+      <main id="main-content" class="main-content"></main>
+
+      <footer class="global-footer">
+        <div class="footer-bottom">
+          <p>© 2025 Pilahin. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

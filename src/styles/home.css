@@ -1,0 +1,355 @@
+/* Section: Get Start */
+.get-start {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 500px;
+  padding: 40px 20px 110px 20px;
+  background: url('../public/images/background.png') no-repeat center center;
+  background-size: cover;
+}
+
+.get-start::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Efek opacity background image */
+}
+
+.get-start-content {
+  position: relative;
+  max-width: 600px;
+  margin-left: 42px;
+  z-index: 1;
+}
+
+.get-start-title {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.get-start-subtitle {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0a9db0;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #096d7b;
+}
+
+/* Section: Our Features */
+.our-features {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: -100px auto 40px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.features-title {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.features-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: #0a9db0;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+}
+
+/* Section: About Us */
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 40px;
+  background-color: #f5f5f5;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+}
+
+.about-us-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 100%);
+}
+
+.about-us-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-us-title {
+  color: #0a9db0;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-us-subtitle {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.education-options {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.education-title {
+  font-size: 2rem;
+  color: #0a9db0;
+  margin-bottom: 40px;
+}
+
+.education-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  flex: 1 1 400px;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-content {
+  padding: 30px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.education-card h3 {
+  color: #0a9db0;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.education-card ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.education-card li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.see-more-button {
+  display: block;
+  padding: 12px 0;
+  background-color: #0a9db0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.see-more-button:hover {
+  background-color: #096d7b;
+}
+
+/* Main Footer - Fixed to connect with global footer */
+.main-footer {
+  background-color: #0a9db0;
+  color: white;
+  padding: 40px 0 0 0; /* Removed bottom padding */
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 400px;
+  padding-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.address p, 
+.contact-info p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.address p:first-child {
+  font-weight: bold;
+}
+
+/* Fixed Footer Links Layout */
+.footer-links {
+  flex: 2;
+  display: flex;
+  gap: 100px; /* Default gap for desktop */
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* First column with two groups side by side on desktop */
+.link-column:first-child {
+  flex-direction: row;
+  gap: 100px;
+}
+
+.link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-group p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.link-group a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.link-group a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .footer-links {
+    gap: 60px;
+  }
+  
+  .link-column:first-child {
+    gap: 60px;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-image,
+  .about-us-content {
+    max-width: 100%;
+  }
+
+  .get-start {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .get-start-content {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* Footer mobile layout */
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Stack link groups vertically on mobile */
+  .link-column:first-child {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-info {
+    min-width: auto;
+  }
+}
